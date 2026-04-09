@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8swebappdemo
+  labels:
+    app: k8swebappdemo
+spec:
+  containers:
+    - name: k8swebappdemo
+      image: nidhirai1105/webappdemo:1.0
+      ports:
+        - containerPort: 8080
